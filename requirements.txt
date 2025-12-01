@@ -1,0 +1,33 @@
+# --- Core Application Dependencies ---
+fastapi[standard]  # Includes uvicorn
+streamlit
+inngest
+python-dotenv
+bert-score
+#transformers
+
+# For CUDA 12.1 builds, install torch and torchvision from PyTorch's wheel index:
+#--extra-index-url https://download.pytorch.org/whl/cu121
+#torch
+#torchvision
+
+
+# --- LlamaIndex Core & Integrations ---
+# Core LlamaIndex
+llama-index
+
+# LLM Integrations
+llama-index-llms-cohere
+llama-index-llms-gemini
+llama-index-llms-huggingface
+
+# Embedding Models
+llama-index-embeddings-huggingface
+
+# Vector Store / Data Backend
+weaviate-client
+llama-index-vector-stores-weaviate
+
+# Retriever
+llama-index-retrievers-bm25
+
