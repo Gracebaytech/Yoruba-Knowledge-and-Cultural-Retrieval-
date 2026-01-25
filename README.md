@@ -32,7 +32,7 @@ The system integrates multiple Yoruba language resources, including:
   - *Àsà àti Ìṣẹ̀ Yorùbá* – G. B. A. Odùnjọ́
   - *Àwọn Àṣà àti Òrìṣà Ilé Yorùbá* – L. J. B. Eades
 
-All datasets are used strictly for non-commercial, academic research and cultural preservation purposes.
+All datasets are used strictly for non-commercial, academic research and cultural preservation purposes. Here is the link of the dataset : https://drive.google.com/drive/folders/1h7iKCPfQYCbR-cir2TJZE9XoMAlpSLtV?usp=sharing
 
 ---
 
