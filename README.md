@@ -63,21 +63,141 @@ Retrieval performance is analysed across multiple thematic domains relevant to Y
 
 ---
 
-## Retrieval-Augmented Generation (RAG) Models
-The system implements and evaluates multiple RAG variants, including:
+Data Sources and Collection
 
-- **Naïve RAG**  
-  - Direct retrieval and generation without advanced filtering
+The system integrates multiple Yoruba language resources to ensure linguistic diversity and cultural depth.
 
-- **Advanced RAG**  
-  - Context filtering, reranking, and improved prompt construction
+Primary Data Sources
 
-- **Modular RAG**  
-  - Domain-aware retrievers and modular generation pipelines
+BBC Yoruba – scraped current affairs, culture, and social commentary
 
-Each variant is evaluated for fluency, relevance, and cultural accuracy.
+Yankari Dataset – Yoruba language corpus
 
----
+Niger-Volta-LTI Yoruba Text Repository – linguistic datasets
+
+Digitised literary works:
+
+Àsà àti Ìṣẹ̀ Yorùbá – G. B. A. Odúnjọ
+
+Àwọn Àṣà àti Òrìṣà Ilé Yorùbá – L. J. B. Eades
+
+Data Collection & Digitisation Code
+bbc_scraper.py
+scraping.ipynb
+yoruba_preprocess.py
+
+
+Large datasets are hosted externally (e.g., Hugging Face) due to GitHub size limits.
+
+Linguistic Exploratory Data Analysis (Objective 1)
+
+This phase examines key linguistic properties of Yorùbá, including:
+
+Tonal patterns and diacritics
+
+Word structure and morphology
+
+Cultural expressions and idiomatic usage
+
+Frequency distributions across domains
+
+Notebook:
+
+linguistic_eda_yoruba(Obj 1).ipynb
+
+
+Insights from this analysis inform preprocessing strategies and retrieval optimization for culturally aware generation.
+
+Retrieval Techniques Evaluation (Objective 2)
+
+Different retrieval strategies are evaluated across multiple content domains:
+
+Sparse retrieval (BM25)
+
+Dense retrieval (embedding-based)
+
+Hybrid retrieval (sparse + dense)
+
+Notebook:
+
+retrieval techniques (objective 2).ipynb
+
+Vector Database Ingestion
+
+All processed Yoruba texts are embedded and indexed into a vector database for downstream RAG operations.
+
+Notebook:
+
+vector_db_ingestion_yoruba.ipynb
+
+RAG System Architectures (Objective 3)
+
+Three RAG variants are implemented and compared:
+
+1. Naive RAG
+
+Single-step retrieval
+
+Direct context injection
+
+Naive Rag(Objective 3A).ipynb
+
+2. Advanced RAG
+
+Query refinement
+
+Multi-stage retrieval
+
+Context re-ranking
+
+Advanced_Rag(Objective 3).ipynb
+
+3. Modular RAG
+
+Decoupled retrieval, reasoning, and generation
+
+Flexible orchestration
+
+modular_rag(objective 3).ipynb
+
+LLM & RAG Variant Comparison (Objectives 4 & 5)
+
+This stage evaluates how different large language models perform within each RAG architecture using:
+
+Mean Reciprocal Rank (MRR)
+
+Precision
+
+Recall
+
+Cultural relevance and semantic accuracy
+
+Notebook:
+
+llm_comparison_&_Retrieval.ipynb
+
+
+Ground truth data:
+
+ground_truth.csv
+
+Deployment & Human Evaluation (Objective 6)
+
+The best-performing RAG configuration is deployed using Chainlit to enable interactive querying.
+
+Human evaluation assesses:
+
+Accuracy
+
+Relevance
+
+Cultural fidelity
+
+Linguistic appropriateness
+
+Application:
+
+app.py
 
 ## System Architecture and Deployment
 The repository includes modules for:
@@ -106,6 +226,23 @@ Evaluation is conducted using a mixed-method approach:
     - Cultural and contextual accuracy
 
 ---
+##Project Structure
+
+├── app.py
+├── main.py
+├── requirements.txt
+├── bbc_scraper.py
+├── yoruba_preprocess.py
+├── scraping.ipynb
+├── linguistic_eda_yoruba(Obj 1).ipynb
+├── retrieval techniques (objective 2).ipynb
+├── vector_db_ingestion_yoruba.ipynb
+├── Naive Rag(Objective 3A).ipynb
+├── Advanced_Rag(Objective 3).ipynb
+├── modular_rag(objective 3).ipynb
+├── llm_comparison_&_Retrieval.ipynb
+├── ground_truth.csv
+└── README.md
 
 ### Citation
 - Akpobi, M., 2024. Yankari: A Monolingual Yoruba Dataset. https://doi.org/10.48550/arXiv.2412.03334.
