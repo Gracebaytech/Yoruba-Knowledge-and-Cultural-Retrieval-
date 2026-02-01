@@ -195,18 +195,31 @@ Evaluation is conducted using a mixed-method approach:
 ├──  app.py
 
 ├── main.py
+
 ├── requirements.txt
+
 ├── bbc_scraper.py
+
 ├── yoruba_preprocess.py
+
 ├── scraping.ipynb
+
 ├── linguistic_eda_yoruba(Obj 1).ipynb
+
 ├── retrieval techniques (objective 2).ipynb
+
 ├── vector_db_ingestion_yoruba.ipynb
+
 ├── Naive Rag(Objective 3A).ipynb
+
 ├── Advanced_Rag(Objective 3).ipynb
+
 ├── modular_rag(objective 3).ipynb
+
 ├── llm_comparison_&_Retrieval.ipynb
+
 ├── ground_truth.csv
+
 └── README.md
 
 ### Citation
