@@ -109,68 +109,55 @@ vector_db_ingestion_yoruba.ipynb
 
 RAG System Architectures (Objective 3)
 
-Three RAG variants are implemented and compared:
+**Three RAG variants are implemented and compared:**
 
-1. Naive RAG
-
-Single-step retrieval
-
-Direct context injection
+1. Naive RAG [Single-step retrieval and Direct context injection]
 
 Naive Rag(Objective 3A).ipynb
 
-2. Advanced RAG
-
-Query refinement
-
-Multi-stage retrieval
-
-Context re-ranking
+2. Advanced RAG [Query refinement ,Multi-stage retrieval and Context re-ranking]
 
 Advanced_Rag(Objective 3).ipynb
 
-3. Modular RAG
-
-Decoupled retrieval, reasoning, and generation
-
-Flexible orchestration
+3. Modular RAG [ Decoupled retrieval, reasoning, and generation Flexible orchestration]
+**Notebook:**
 
 modular_rag(objective 3).ipynb
 
-LLM & RAG Variant Comparison (Objectives 4 & 5)
+### LLM & RAG Variant Comparison (Objectives 4 & 5)
 
 This stage evaluates how different large language models perform within each RAG architecture using:
 
-Mean Reciprocal Rank (MRR)
+- Mean Reciprocal Rank (MRR)
 
-Precision
+- Precision
 
-Recall
+- Recall
 
-Cultural relevance and semantic accuracy
+- Cultural relevance and semantic accuracy
 
-Notebook:
+**Notebook:**
 
 llm_comparison_&_Retrieval.ipynb
 
 
-Ground truth data:
+**Ground truth data:**
 
 ground_truth.csv
 
-Deployment & Human Evaluation (Objective 6)
+### Deployment & Human Evaluation (Objective 6)
 
 The best-performing RAG configuration is deployed using Chainlit to enable interactive querying.
 
-Human evaluation assesses:
+**Human evaluation assesses:**
 
-Accuracy
+- Accuracy
 
-Relevance
+- Relevance
 
-Cultural fidelity
+- Cultural fidelity
 
-Linguistic appropriateness
+#### Linguistic appropriateness
 
 Application:
 
