@@ -63,62 +63,39 @@ Retrieval performance is analysed across multiple thematic domains relevant to Y
 
 ---
 
-Data Sources and Collection
-
-The system integrates multiple Yoruba language resources to ensure linguistic diversity and cultural depth.
-
-Primary Data Sources
-
-BBC Yoruba – scraped current affairs, culture, and social commentary
-
-Yankari Dataset – Yoruba language corpus
-
-Niger-Volta-LTI Yoruba Text Repository – linguistic datasets
-
-Digitised literary works:
-
-Àsà àti Ìṣẹ̀ Yorùbá – G. B. A. Odúnjọ
-
-Àwọn Àṣà àti Òrìṣà Ilé Yorùbá – L. J. B. Eades
-
-Data Collection & Digitisation Code
-bbc_scraper.py
-scraping.ipynb
-yoruba_preprocess.py
 
 
-Large datasets are hosted externally (e.g., Hugging Face) due to GitHub size limits.
+**Data Collection & Digitisation Code**
+- bbc_scraper.py
+- scraping.ipynb
+- yoruba_preprocess.py
 
-Linguistic Exploratory Data Analysis (Objective 1)
+
+- Large datasets are hosted externally (e.g., Hugging Face) due to GitHub size limits.
+
+- Linguistic Exploratory Data Analysis (Objective 1)
 
 This phase examines key linguistic properties of Yorùbá, including:
 
-Tonal patterns and diacritics
+- Tonal patterns and diacritics
 
-Word structure and morphology
+- Word structure and morphology
 
-Cultural expressions and idiomatic usage
+- Cultural expressions and idiomatic usage
 
-Frequency distributions across domains
+- Frequency distributions across domains
 
-Notebook:
+**Notebook:**
 
-linguistic_eda_yoruba(Obj 1).ipynb
+- linguistic_eda_yoruba(Obj 1).ipynb :Insights from this analysis inform preprocessing strategies and retrieval optimization for culturally aware generation.
 
+- Retrieval Techniques Evaluation (Objective 2) :Different retrieval strategies are evaluated across multiple content domains:
 
-Insights from this analysis inform preprocessing strategies and retrieval optimization for culturally aware generation.
+- Sparse retrieval (BM25) :Dense retrieval (embedding-based)
 
-Retrieval Techniques Evaluation (Objective 2)
+- Hybrid retrieval (sparse + dense)
 
-Different retrieval strategies are evaluated across multiple content domains:
-
-Sparse retrieval (BM25)
-
-Dense retrieval (embedding-based)
-
-Hybrid retrieval (sparse + dense)
-
-Notebook:
+**Notebook:**
 
 retrieval techniques (objective 2).ipynb
 
@@ -126,7 +103,7 @@ Vector Database Ingestion
 
 All processed Yoruba texts are embedded and indexed into a vector database for downstream RAG operations.
 
-Notebook:
+**Notebook:**
 
 vector_db_ingestion_yoruba.ipynb
 
@@ -229,6 +206,7 @@ Evaluation is conducted using a mixed-method approach:
 ## Project Structure
 
 ├──  app.py
+
 ├── main.py
 ├── requirements.txt
 ├── bbc_scraper.py
