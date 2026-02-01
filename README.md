@@ -226,9 +226,9 @@ Evaluation is conducted using a mixed-method approach:
     - Cultural and contextual accuracy
 
 ---
-##Project Structure
+## Project Structure
 
-├── app.py
+├──  app.py
 ├── main.py
 ├── requirements.txt
 ├── bbc_scraper.py
